@@ -11,14 +11,8 @@ app.get("/", (req, res) => {
 });
 
 // Importer le routeur API des programmes
-const programsRouter = require("./routers/api/programs/router");
+const programsRouter = require("./routers/api/router");
 
-app.use(
-  "/api/programs",
-  (req, res, next) => {
-    next();
-  },
-  programsRouter
-);
+app.use("/api", programsRouter);
 
 module.exports = app;
