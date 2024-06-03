@@ -11,6 +11,7 @@ const categories = [
     id: 2,
     name: "Comédie",
   },
+
 ];
 
 // Declare the actions
